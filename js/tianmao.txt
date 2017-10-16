@@ -1,0 +1,54 @@
+<nav>
+    <div class="top">
+        <p>
+            <em>喵，欢迎来天猫</em>
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+        </p>
+        <ul class="right">
+            <!--我的淘宝-->
+            <li class="rightli">
+                <div>
+                    <a href="">我的淘宝</a>
+                    <div></div>
+                </div>
+            </li>
+            <!--我关注的品牌-->
+            <li>
+                <i>心</i>
+                <a href="">我关注的品牌</a>
+            </li>
+            <!--购物车-->
+            <li>
+                <i>购物车</i>
+                <a href="">购物车0件</a>
+            </li>
+            <!--收藏夹-->
+            <li>
+                <div>
+                    <a href="">收藏夹</a>
+                    <div></div>
+                </div>
+            </li>
+            <!--|-->
+            <li>|</li>
+            <!--手机版-->
+            <li>
+                <i>手机</i>
+                <a>手机版</a>
+            </li>
+            <!--淘宝网-->
+            <li>
+                <a href="">淘宝网</a>
+            </li>
+            <!--商家支持-->
+            <li>
+                <div>
+                    <a href="">商家支持</a>
+                    <div></div>
+                </div>
+            </li>
+            <!--网站导航-->
+        </ul>
+    </div>
+</nav>
