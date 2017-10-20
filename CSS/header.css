@@ -1,0 +1,63 @@
+.header{
+
+    font-family: Arial;
+
+}
+.header a{
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+.headercontent{
+    width: 1232px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto auto;
+}
+.headLeft{
+    float: left;
+    width: 240px;
+    height: 130px;
+}
+.headRight{
+    float: left;
+    margin-top: 38px;
+    margin-left: 72px;
+}
+.searchBox{
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.searchBox input{
+    border: 2px solid #ff0036;
+    height: 34px;
+    width: 496px;
+    outline: none;
+    font-size: 14px;
+    color: black;
+    margin-right: 0px;
+    padding-right: 0px;
+    float: left;
+}
+.searchBox .searchBtn{
+    float: left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.searchBottom ul{
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0px;
+    margin-top: 8px;
+    padding-top: 0px;
+}
+.searchBottom li{
+    float: left;
+}
+.searchBottom .searchRed{
+    margin-right: 12px;
+    color: #ff0036;
+}
+.searchBottom .searchGray{
+    margin-right: 12px;
+}

@@ -1,20 +1,21 @@
 body{
-    font-size: 12px;
-    font-family: Arial;
+    width: 100%;
 }
-a{
+.nav a{
     color: #999;
     text-decoration: none;
 }
-nav{
+.nav{
     width: 100%;
     background-color: #f2f2f2;
     border-bottom: 1px solid #e7e7e7;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 12px;
+    font-family: Arial;
 }
-nav .top{
-    width: 65%;
+.nav .top{
+    width: 1232px;
     text-align: center;
     overflow: hidden;
     margin: auto auto;
@@ -29,7 +30,7 @@ nav .top{
     float: left;
     margin-left: 18px;
 }
-nav .lastchild{
+.nav .lastchild{
     margin-left: 0px;
 }
 .rightchild span{
