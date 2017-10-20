@@ -1,0 +1,61 @@
+#containerBox{
+    width: 100%;
+    background-color: #e7e7e7;
+}
+#container {
+    position: relative;
+    width: 1192px;
+    height: 500px;
+    overflow: hidden;
+    /*border: 3px solid #333;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+
+}
+
+#list {
+    position: absolute;
+    z-index: 1;
+    width: 8344px;
+    height: 500px;
+
+}
+#list img {
+    float: left;
+    width: 1192px;
+    height: 500px;
+
+}
+#buttons {
+    position: absolute;
+    left: 540px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 100px;
+}
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+#buttons .on {
+    background: orangered;
+}
+.rotation1{
+    background-color: #ff0036;
+}
+.rotation2{
+    background-color: #e7e7e7;
+}
+.rotation3 .rotation4 .rotation5{
+    background-color: #f9f9f9;
+}
