@@ -43,17 +43,16 @@
 }
 .next{overflow: hidden}
 .next .description{
+    width: 100%;
     overflow: hidden;
     padding-top: 18px;
     padding-bottom: 18px;
     background-color: white;
     margin-top: 24px;
 }
-.next .brand-sale{float: left;width: 192px;padding-left: 10px}
-.next .luxury-channel{float: left;width: 412px;padding-left: 10px}
-.next .brand-activity{float: left;width: 412px;padding-left: 10px}
+.next .brand-sale,.next .luxury-channel,.next .brand-activity{width:auto;padding-left: 10px;margin-right: 50px}
 .next .more {
-    float: left;
+    float: right;
     margin-right: 14px;
 }
 .next .famous-product{
