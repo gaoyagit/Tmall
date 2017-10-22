@@ -11,16 +11,16 @@ body{
     width: 100%;
     background-color: #f2f2f2;
     border-bottom: 1px solid #e7e7e7;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 12px;
     font-family: Arial;
 }
 .nav .top{
     width: 1232px;
     text-align: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: auto auto;
+    height: 32px;
+    line-height: 32px;
 }
 .top .left{
     float: left;
@@ -30,7 +30,7 @@ body{
 }
 .top .rightchild{
     float: left;
-    margin-left: 18px;
+    position:relative;
 }
 .nav .lastchild{
     margin-left: 0px;
@@ -38,21 +38,56 @@ body{
 .rightchild span{
     color: #999999;
 }
-.rightchild a:hover{
-    color: #ff0036;
-}
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-.dropdwn-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-}
-.dropdown:hover .dropdwn-content{
+.menu-a{
+    border: 1px solid #f2f2f2;
+    border-bottom: 0px ;
+    padding: 0 10px;
+    height: 32px;
     display: block;
+    position: relative;
+}
+.menu-a b{
+    position: absolute;
+    right: 3px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid dashed dashed;
+    border-color: #bbb transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+.menu-a:hover b{
+    top: 12px;
+    border-style: dashed dashed solid dashed ;
+    border-color: transparent transparent #bbb transparent  ;
+}
+.rightchild > a:hover{
+    color: #ff0036;
+    height: 33px;
+}
+.dropdown-content{
+    display: none ;
+    position: absolute;
+    background-color:white;
+    left: 0px;
+    top:33px;
+    width: 74px;
+    padding: 0px 10px;
+    border: 1px solid #f2f2f2;
+}
+.rightchild:hover {
+    background: white;
+}
+.rightchild:hover .dropdown-content{
+    display: block;
+    border-top: 0px;
+}
+.dropdown-content a{
+    display: block;
+    line-height: 20px;
+}
+.dropdown-content a:hover{
+    color: #ff0036;
 }
