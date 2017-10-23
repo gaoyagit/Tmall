@@ -1,6 +1,8 @@
 #containerBox{
     width: 100%;
     background-color: #e7e7e7;
+    margin-top: -3px;
+    border-top: solid 1px #ff0036;
 }
 #container {
     position: relative;
@@ -11,7 +13,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10px;
+    /*margin-top: -10px;*/
 
 }
 
