@@ -1,0 +1,18 @@
+<div class="hot-word-con">
+                    <div class="hot-word-line">
+                        <div class="title-text">当季流行</div>
+                        <div class="line-con">
+                            <a class="hot-word highlight" href="">双11女装预售会场</a>
+                            <a class="hot-word highlight" href="">冬季新品</a>
+                            <a class="hot-word highlight" href="">商场同款</a>
+                            <a class="hot-word highlight" href="">毛呢大衣</a>
+                            <a class="hot-word highlight" href="">毛针织衫</a>
+                            <a class="hot-word highlight" href="">裤子</a>
+                            <a class="hot-word highlight" href="">气质连衣裙</a>
+                            <a class="hot-word highlight" href="">内衣预售会场</a>
+                            <a class="hot-word highlight" href="">无痕文胸</a>
+                            <a class="hot-word highlight" href="">运动文胸</a>
+                            <a class="hot-word highlight" href="">潮流家居服</a>
+                            <a class="hot-word highlight" href="">毛呢大衣</a>
+                        </div>
+                    </div>
