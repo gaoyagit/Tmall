@@ -18,6 +18,7 @@
     float: left;
     width: 240px;
     height: 130px;
+    margin-left: -18px;
 }
 .headRight{
     float: left;
