@@ -1,0 +1,112 @@
+.footer{
+    width: 100%;
+    border-top: 1px solid #D1D7DC;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.tmall-ensure{
+    width: 1190px;
+    height: 100px;
+    background: url(//img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg) no-repeat;
+    margin: 25px auto;
+    padding: 0;
+}
+.tmall-ensure a{
+    float: left;
+    height: 100px;
+    width: 297px;
+}
+.tmall-desc{
+    width: 1190px;
+    border-top: 1px solid #ededed;
+    padding-top: 22px;
+    margin: auto;
+    height: 190px;
+    /*background-image:url('//img.alicdn.com/tfs/TB1dl28RXXXXXbzaFXXXXXXXXXX-136-50.png') ;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 45px bottom ;*/
+    background: url('//img.alicdn.com/tfs/TB1dl28RXXXXXbzaFXXXXXXXXXX-136-50.png') 45px bottom no-repeat;
+    background-size:68px 25px ;
+}
+.ensure{
+    float: left;
+    width: 186px;
+    padding-left: 52px;
+    text-align: left;
+}
+/*.shopping-guide{*/
+    /**/
+/*}*/
+/*.lynx-protection{*/
+    /*width: 186px;*/
+    /*padding-left: 52px;*/
+/*}*/
+.ensure dt{
+    color:#646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+}
+.ensure dd{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.ensure a{
+    color: #8b8b8b;
+    display: inline-block;
+}
+.tmall-copyright{
+    text-align: left;
+    background-color: black;
+    border-top: 2px solid #ff0036;
+}
+.tmall-copyright-content{
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-tmallinfo{
+    padding: 5px 0;
+    height: 25px;
+    line-height: 25px;
+}
+.footer-tmallinfo a{
+    color: white;
+    margin-right: 3px;
+}
+.footer-tmallinfo span{
+    color: white;
+}
+.footer-copyright{
+    height: 25px;
+    line-height: 25px;
+}
+.footer-copyright span{
+    color: #a4a4a4;
+}
+.footer-copyright a{
+    display: inline-block;
+    color: #a4a4a4;
+    margin-right: 65px;
+}
+.footer-copyright-middle a img{
+    position: relative;
+    /*vertical-align: baseline;*/
+    top: 5px;
+}
+.footer-copyright-last b{
+    display: inline-block;
+    color: #686868;
+    font-weight: 400;
+}
+.footer-fp-img{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.footer-fp-img a{
+     display: inline-block;
+    margin-right: 10px;
+}

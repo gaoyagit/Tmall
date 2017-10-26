@@ -338,3 +338,18 @@
 .may-like{
     margin-left: 0px;
 }
+.tm-end{
+    display: block;
+    background-image: url(//img.alicdn.com/tps/TB1wQDAPXXXXXXgaFXXXXXXXXXX-62-35.png);
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    /*content: '\20';*/
+    text-align: center;
+    width: 80px;
+    height: 45px;
+    margin: 0 auto 10px;
+    /*margin:0 auto;*/
+    /*margin-bottom: 10px;*/
+    background-size: cover;
+    z-index: 9;
+}
