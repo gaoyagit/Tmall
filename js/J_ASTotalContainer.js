@@ -22,7 +22,7 @@
 //         Topnav.style.display = "none";
 //     }
 // })
-
+//这个也可以
 // window.onscroll = function(){
 //     var Topnav = document.getElementById('J_ASTotalContainer');
 //     var topMax = window.innerHeight;//网页屏幕可用高度
