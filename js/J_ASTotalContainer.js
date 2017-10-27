@@ -11,14 +11,24 @@
 //        Topnav.style.display = "none";
 //    }
 //}
-
-$(window).scroll(function(){
+//window.addEventListener('scroll',getTop,false);
+window.onscroll = function(){
     var Topnav = document.getElementById('J_ASTotalContainer');
     var topMax = window.innerHeight;//网页屏幕可用高度
-    var scrollTop = $(window).scrollTop();
+    var scrollTop = document.documentElement.scrollTop;
     if(scrollTop > topMax){
         Topnav.style.display = "block";
     }else{
         Topnav.style.display = "none";
     }
-})
+}
+//$(window).scroll(function(){
+//    var Topnav = document.getElementById('J_ASTotalContainer');
+//    var topMax = window.innerHeight;//网页屏幕可用高度
+//    var scrollTop = $(window).scrollTop();
+//    if(scrollTop > topMax){
+//        Topnav.style.display = "block";
+//    }else{
+//        Topnav.style.display = "none";
+//    }
+//})
