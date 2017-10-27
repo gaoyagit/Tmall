@@ -3,32 +3,42 @@
  */
 //function getTop(){
 //    var Topnav = document.getElementById('J_ASTotalContainer');
-//    var topMax = window.innerHeight;//ÍøÒ³ÆÁÄ»¿ÉÓÃ¸ß¶È
-//    var scrollTop = document.documentElement.scrollHeight;//¹ö¶¯ÌõµÄ¸ß¶È
+//    var topMax = window.innerHeight;//ï¿½ï¿½Ò³ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ã¸ß¶ï¿½
+//    var scrollTop = document.documentElement.scrollHeight;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ß¶ï¿½
 //    if(scrollTop > topMax){
 //        Topnav.style.display = "block";
 //    }else{
 //        Topnav.style.display = "none";
 //    }
 //}
-//window.addEventListener('scroll',getTop,false);
-window.onscroll = function(){
+// $(window).scroll(function(){
+//     var Topnav = document.getElementById('J_ASTotalContainer');
+//     var topMax = window.innerHeight;//ï¿½ï¿½Ò³ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ã¸ß¶ï¿½
+//     var scrollTop = $(window).scrollTop();
+//     if(scrollTop > topMax){
+//         Topnav.style.display = "block";
+//     }else{
+//         Topnav.style.display = "none";
+//     }
+// })
+//è¿™ä¸ªä¹Ÿå¯ä»?
+// window.onscroll = function(){
+//     var Topnav = document.getElementById('J_ASTotalContainer');
+//     var topMax = window.innerHeight;//ç½‘é¡µå±å¹•å¯ç”¨é«˜åº¦
+//     var scrollTop = document.documentElement.scrollTop;
+//     if(scrollTop > topMax){
+//         Topnav.style.display = "block";
+//     }else{
+//         Topnav.style.display = "none";
+//     }
+// }
+window.addEventListener('scroll',function(){
     var Topnav = document.getElementById('J_ASTotalContainer');
-    var topMax = window.innerHeight;//ÍøÒ³ÆÁÄ»¿ÉÓÃ¸ß¶È
+    var topMax = window.innerHeight;//ç½‘é¡µå±å¹•å¯ç”¨é«˜åº¦
     var scrollTop = document.documentElement.scrollTop;
     if(scrollTop > topMax){
         Topnav.style.display = "block";
     }else{
         Topnav.style.display = "none";
     }
-}
-//$(window).scroll(function(){
-//    var Topnav = document.getElementById('J_ASTotalContainer');
-//    var topMax = window.innerHeight;//ÍøÒ³ÆÁÄ»¿ÉÓÃ¸ß¶È
-//    var scrollTop = $(window).scrollTop();
-//    if(scrollTop > topMax){
-//        Topnav.style.display = "block";
-//    }else{
-//        Topnav.style.display = "none";
-//    }
-//})
+})
