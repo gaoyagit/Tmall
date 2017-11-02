@@ -747,16 +747,16 @@
                 <div class="body-right">
                     <div class="grid two-grid">
                         <div class="floor-tabs">
-                            <ul class="floor-tabs-head">
-                                <li class="floor-current-tab">
-                                    <p class="tab-title">今日疯抢</p>
+                            <ul class="floor-tabs-head table-list">
+                                <li class="floor-current-tab ">
+                                    <a class="tab-title" href="#tab-1">今日疯抢</a>
                                 </li>
-                                <li>
-                                    <p class="tab-title">量贩装</p>
+                                <li class="floor-current-tab active">
+                                    <a class="tab-title" href="#tab-2">量贩装</a>
                                 </li>
                             </ul>
                             <div class="floor-tabs-content">
-                                <div class="floor-tabs-detail">
+                                <div class="floor-tabs-detail " id="tab-1">
                                     <a class="right-detail-a" href="">
                                         <div class="right-detail">
                                             <div class="title-warp">
@@ -770,22 +770,23 @@
                                         <img class="item-img" src="Tmall-resources/TB11Fe7hzihSKJjy0FeXXbJtpXa-400-400.jpg">
                                     </a>
                                 </div>
-                                <!--<div class="floor-tabs-detail">-->
-                                <!--<a class="right-detail-a" href="">-->
-                                <!--<div class="right-detail">-->
-                                <!--<div class="title-warp">-->
-                                <!--<img class="cla-icon" src="天猫tmall.com&#45;&#45;理想生活上天猫_files/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png">-->
-                                <!--<span class="tab-item-title">好奇铂金装</span>-->
-                                <!--</div>-->
-                                <!--<div>-->
-                                <!--<span class="tab-desp">满399-50</span>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<img class="item-img" src="天猫tmall.com&#45;&#45;理想生活上天猫_files/TB1Wa5XoMoQMeJjy0FpXXcTxpXa-400-400.jpg">-->
-                                <!--</a>-->
-                                <!--</div>-->
+                                <div class="floor-tabs-detail active" id="tab-2">
+                                    <a class="right-detail-a" href="">
+                                        <div class="right-detail">
+                                            <div class="title-warp">
+                                                <img class="cla-icon" src="Tmall-resources/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png">
+                                                <span class="tab-item-title">好奇铂金装</span>
+                                            </div>
+                                            <div>
+                                                <span class="tab-desp">满399-50</span>
+                                            </div>
+                                        </div>
+                                        <img class="item-img" src="Tmall-resources/TB1Wa5XoMoQMeJjy0FpXXcTxpXa-400-400.jpg">
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <a class="grid one-grid-price" href="" >
                         <div class="floor-item-content-wrap">
@@ -2143,7 +2144,9 @@
 
 </div>
 <script src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/J_ASTotalContainer.js"></script>
+<script src="js/two-grid.js"></script>
 <script src="js/rotation.js"></script>
 </body>
 </html>

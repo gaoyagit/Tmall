@@ -146,17 +146,23 @@
     padding: 0 20px;
 }
 .floor-current-tab{
-    background-color: #00B262;
     color: white;
 }
+.floor-tabs-head .active{
+    background-color: #00B262;
+}
 .floor-tabs-head .tab-title{
+    display: block;
     font-size: 18px;
     line-height: 20px;
     margin-top: 18px;
 }
-/*.floor-tabs-detail{*/
-    /**/
-/*}*/
+.floor-tabs-detail{
+    display: none;
+}
+.active{
+    display: block;
+}
 .right-detail-a{
     display: block;
     height: 225px;
