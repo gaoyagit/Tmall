@@ -63,47 +63,47 @@
 //
 //})
 
-window.onload = function(){
-    var $ul = document.getElementById('table-list');
-    var $li =$ul.getElementsByClassName('floor-current-tab');//$liÀïÃæ´æ·ÅÁËËùÓĞµÄliµÄ±êÇ©
-    var pannelBox = document.getElementsByClassName('floor-tabs-content');
-    var pannel = pannelBox.getElementsByClassName('floor-tabs-detail');//pannelÀïÃæ´æ·ÅÁËËùÓĞµÄÄÚÈİÃæ°åµÄ±êÇ©
-    console.log(len);
-    var len = $li.length;
-    tabPanel();
-    function tabPanel(){
-        var i=0;
-        var timer = null;
-        var num=0;
+var $ul = document.getElementById('table-list');
+var $li =$ul.getElementsByClassName('floor-current-tab');//$liï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½liï¿½Ä±ï¿½Ç©
+var pannelBox = document.getElementsByClassName('floor-tabs-content');
+var pannel = document.getElementsByClassName('floor-tabs-detail');//pannelï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ç©
+console.log(len);
+var len = $li.length;
 
-        for(i = 0; i <len;i++){
-            $li[i].index = i;
-            $li[i][onmouseover] = function(){
-                clearInterval(timer);
-                num = this.index;
-                tab_change();
-            }
-            $li[i].onmouseout = function(){
-                autoplay();
-            }
-        }
+tabPanel();
 
-        function tab_change(){
-            for(i = 0 ;i<len;i++){
-                $li[i].removeClass('active');
-                pannel[i].removeClass('active');
-            }
-            $li[num].addClass('active');
-            pannel[num].addClass('active');
-        }
+function tabPanel(){
+    var i=0;
+    var timer = null;
+    var num=0;
 
-        function autoplay(){
-            timer = setInterval(function(){
-                num++;
-                if(num>=len) num=0;
-                tab_change();
-            },1000);
+    for(i = 0; i <len;i++){
+        $li[i].index = i;
+        $li[i].onmouseover = function(){
+            clearInterval(timer);
+            num = this.index;
+            tab_change();
         }
-        autoplay();
+        $li[i].onmouseout = function(){
+            autoplay();
+        }
     }
+
+    function tab_change(){
+        for(i = 0 ;i<len;i++){
+            $li[i].classList.remove("active");
+            pannel[i].classList.remove('active');
+        }
+        $li[num].classList.add('active');
+        pannel[num].classList.add('active');
+    }
+
+    function autoplay(){
+        timer = setInterval(function(){
+            num++;
+            if(num>=len) num=0;
+            tab_change();
+        },1000);
+    }
+    autoplay();
 }
