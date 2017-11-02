@@ -42,19 +42,19 @@ window.onload = function(){
 
 
     function buttonsShow() {
-        //ÕâÀïÐèÒªÇå³ýÖ®Ç°µÄÑùÊ½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½Ê½
         for (var i = 0; i < buttons.length; i++) {
             if (buttons[i].className == 'on') {
                 buttons[i].className = '';
             }
 
         }
-        //Êý×é´Ó0¿ªÊ¼£¬¹ÊindexÐèÒª-1
+        //ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½indexï¿½ï¿½Òª-1
         buttons[index - 1].className = 'on';
     }
 
     for (var i = 0; i < buttons.length; i++) {
-        // ÕâÀïÊ¹ÓÃµÄÊÇÁ¢¼´Ö´ÐÐº¯Êý£¬
+        // ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½
         (function(i) {
             buttons[i].onclick = function() {
                 var clickIndex = parseInt(this.getAttribute('index'));
@@ -65,6 +65,5 @@ window.onload = function(){
             }
         })(i)
     }
-
 
 }
