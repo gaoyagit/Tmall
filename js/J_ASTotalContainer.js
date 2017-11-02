@@ -2,7 +2,7 @@ function getTop(){
     var Topnav = document.getElementById('J_ASTotalContainer');
     var topMax = window.innerHeight;
     var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-    console.log(scrollTop);
+    //console.log(scrollTop);
     if(scrollTop > topMax){
         Topnav.style.display = "block";
     }else{

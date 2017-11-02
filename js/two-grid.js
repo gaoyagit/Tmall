@@ -19,25 +19,69 @@
 //    });
 //});
 
+//$('.table-list').each(function(){
+//    var $this = $(this);
+//    var $tab = $this.find('li');
+//    var $tabActive = $tab.find('li.active');
+//    var $link = $tab.find('a');
+//    var $panel = $($link.attr('href'));
+//    var len = $tab.length;
+//    console.log(len);
+//    var i=0;
+//    var timer = null;
+//    var num=0;
+//
+//    for(i=0;i<len;i++){
+//        $tab[i].index = i;
+//        $tab[i].onmouseover = function(){
+//            clearInterval(timer);
+//            num = this.index;
+//            tab_change();
+//        }
+//        $tab[i].onmouseout = function(){
+//            autoplay();
+//        }
+//
+//    }
+//    function tab_change(){
+//        for(i = 0 ;i<len;i++){
+//            $tab[i].removeClass('active');
+//            //pannel[i].removeClass('active');
+//        }
+//        $tab[num].addClass('active');
+//        $panel.addClass('active');
+//    }
+//
+//    function autoplay(){
+//        timer = setInterval(function(){
+//            num++;
+//            if(num>=len) num=0;
+//            tab_change();
+//        },1000);
+//    }
+//        autoplay();
+//
+//})
+
 window.onload = function(){
-    tabPanel('table-list','floor-current-tab','floor-tabs-content','floor-tabs-detail','onmouseover');
-    function tabPanel($ul,$li,pannelBox,pannel,evt){
-        var $ul = document.getElementsByClassName('table-list');
-        var $li =$ul.getElementsByClassName('floor-current-tab');//$li里面存放了所有的li的标签
-        var pannelBox = document.getElementsByClassName('floor-tabs-content');
-        var pannel = pannelBox.getElementsByClassName('floor-tabs-detail');//pannel里面存放了所有的内容面板的标签
-        var len = $li.length;
-        console.log(len);
+    var $ul = document.getElementById('table-list');
+    var $li =$ul.getElementsByClassName('floor-current-tab');//$li里面存放了所有的li的标签
+    var pannelBox = document.getElementsByClassName('floor-tabs-content');
+    var pannel = pannelBox.getElementsByClassName('floor-tabs-detail');//pannel里面存放了所有的内容面板的标签
+    console.log(len);
+    var len = $li.length;
+    tabPanel();
+    function tabPanel(){
         var i=0;
         var timer = null;
         var num=0;
 
         for(i = 0; i <len;i++){
             $li[i].index = i;
-            $li[i][evt] = function(){
+            $li[i][onmouseover] = function(){
                 clearInterval(timer);
                 num = this.index;
-                tab_change()
+                tab_change();
             }
             $li[i].onmouseout = function(){
                 autoplay();
@@ -49,8 +93,8 @@ window.onload = function(){
                 $li[i].removeClass('active');
                 pannel[i].removeClass('active');
             }
-            $li[i].addClass('active');
-            pannel[i].addClass('active');
+            $li[num].addClass('active');
+            pannel[num].addClass('active');
         }
 
         function autoplay(){
