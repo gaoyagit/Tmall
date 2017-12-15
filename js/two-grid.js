@@ -64,9 +64,10 @@
 //})
 
 var $ul = document.getElementById('table-list');
-var $li =$ul.getElementsByClassName('floor-current-tab');
+
+var $li =$ul.getElementsByClassName('floor-current-tab');//$li�����������е�li�ı�ǩ
 var pannelBox = document.getElementsByClassName('floor-tabs-content');
-var pannel = document.getElementsByClassName('floor-tabs-detail');
+var pannel = document.getElementsByClassName('floor-tabs-detail');//pannel�����������е��������ı�ǩ
 console.log(len);
 var len = $li.length;
 
@@ -106,4 +107,6 @@ function tabPanel(){
         },1000);
     }
     autoplay();
+
 }
+
