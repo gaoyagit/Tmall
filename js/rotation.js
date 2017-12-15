@@ -42,19 +42,16 @@ window.onload = function(){
 
 
     function buttonsShow() {
-        //������Ҫ���֮ǰ����ʽ
         for (var i = 0; i < buttons.length; i++) {
             if (buttons[i].className == 'on') {
                 buttons[i].className = '';
             }
 
         }
-        //�����0��ʼ����index��Ҫ-1
         buttons[index - 1].className = 'on';
     }
 
     for (var i = 0; i < buttons.length; i++) {
-        // ����ʹ�õ�������ִ�к�����
         (function(i) {
             buttons[i].onclick = function() {
                 var clickIndex = parseInt(this.getAttribute('index'));

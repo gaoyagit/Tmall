@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>滚动条显示问题</title>
+
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var h=$(this).scrollTop();//获得滚动条距top的高度
+            //alert(h);
+            if(h>600){
+                $("#xianshi").fadeIn();
+                $("#one").addClass("active");
+                $("#one").siblings().removeClass("active");
+                if(h>1200){
+                    $('#two').siblings().removeClass('active');
+                    $('#two').addClass('active');
+                }
+                if(h>1800){
+                    $('#three').siblings().removeClass('active');
+                    $('#three').addClass('active');
+                }
+                if(h>2400){
+                    $('#four').siblings().removeClass('active');
+                    $('#four').addClass('active');
+                }
+                if(h>3000){
+                    $('#five').siblings().removeClass('active');
+                    $('#five').addClass('active');
+                }
+                if(h>3600){
+                    $('#six').siblings().removeClass('active');
+                    $('#six').addClass('active');
+                }
+            }else{
+                $("#xianshi").fadeOut();
+            };
+
+        });
+    </script>
+    <style type="text/css">
+        body{
+            background-color:darkgray;
+        }
+        #test{
+            width:100%;
+            height:5400px;
+
+        }
+        #xianshi{
+            width:50px;
+            height:300px;
+            position:fixed;
+            bottom:50px;
+            left:300px;
+            background-color:#36C;
+            display:none;
+        }
+        .grid{
+            width:50px;
+            height:46px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .active{
+            background-color: #00B262;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="test"></div>
+<div id="xianshi">
+    <div class="grid one" id="one">首页</div>
+    <div class="grid two" id="two">2</div>
+    <div class="grid three " id="three">3</div>
+    <div class="grid four" id="four">4</div>
+    <div class="grid five" id="five">5</div>
+    <div class="grid six" id="six">6</div>
+</div>
+
+</body>
+</html>  

@@ -1,0 +1,67 @@
+.leftBox{
+    padding-top: 35px;
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    z-index: 999999;
+}
+.iconBigBox{
+    margin-top: 20px;
+    height: 50px;
+}
+.iconBigBox-three{
+    margin-top: 50px;
+}
+.iconBox{
+    line-height: 50px;
+}
+.iconBox-content{
+    z-index: 999;
+    /*display: none;*/
+    position: relative;
+    right: 120px;
+    overflow: hidden;
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 50px;
+    opacity: 0;
+    /*animation: mymove 1s;*/
+    transition: opacity 1s ,right 1s ;
+    -webkit-transition:opacity 1s ,right 1s ;
+
+}
+.icon-content{
+    width: 80px;
+    float: left;
+    background-color: #00B262;
+}
+.icon-content-icon{
+    color: #00B262;
+    font-size: 16px;
+    float: left;
+    margin-left: -2px;
+}
+.iconBigBox:hover{
+    background-color: red;
+}
+.iconBigBox:hover .iconBox-content{
+    display: block;
+    opacity: 1;
+    right: 80px;
+}
+/*@keyframes mymove*/
+/*{*/
+/*from {opacity:0;right: 120px}*/
+/*to {opacity:1;right: 80px}*/
+/*}*/
+/*@-webkit-keyframes mymove /!* Safari and Chrome *!/*/
+/*{*/
+/*from {opacity:0;right: 120px;}*/
+/*to {opacity:1;right: 80px;}*/
+/*}*/

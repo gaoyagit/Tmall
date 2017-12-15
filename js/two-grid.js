@@ -63,47 +63,47 @@
 //
 //})
 
-window.onload = function(){
-    var $ul = document.getElementById('table-list');
-    var $li =$ul.getElementsByClassName('floor-current-tab');//$li里面存放了所有的li的标签
-    var pannelBox = document.getElementsByClassName('floor-tabs-content');
-    var pannel = pannelBox.getElementsByClassName('floor-tabs-detail');//pannel里面存放了所有的内容面板的标签
-    console.log(len);
-    var len = $li.length;
-    tabPanel();
-    function tabPanel(){
-        var i=0;
-        var timer = null;
-        var num=0;
+var $ul = document.getElementById('table-list');
+var $li =$ul.getElementsByClassName('floor-current-tab');
+var pannelBox = document.getElementsByClassName('floor-tabs-content');
+var pannel = document.getElementsByClassName('floor-tabs-detail');
+console.log(len);
+var len = $li.length;
 
-        for(i = 0; i <len;i++){
-            $li[i].index = i;
-            $li[i][onmouseover] = function(){
-                clearInterval(timer);
-                num = this.index;
-                tab_change();
-            }
-            $li[i].onmouseout = function(){
-                autoplay();
-            }
-        }
+tabPanel();
 
-        function tab_change(){
-            for(i = 0 ;i<len;i++){
-                $li[i].removeClass('active');
-                pannel[i].removeClass('active');
-            }
-            $li[num].addClass('active');
-            pannel[num].addClass('active');
-        }
+function tabPanel(){
+    var i=0;
+    var timer = null;
+    var num=0;
 
-        function autoplay(){
-            timer = setInterval(function(){
-                num++;
-                if(num>=len) num=0;
-                tab_change();
-            },1000);
+    for(i = 0; i <len;i++){
+        $li[i].index = i;
+        $li[i].onmouseover = function(){
+            clearInterval(timer);
+            num = this.index;
+            tab_change();
         }
-        autoplay();
+        $li[i].onmouseout = function(){
+            autoplay();
+        }
     }
+
+    function tab_change(){
+        for(i = 0 ;i<len;i++){
+            $li[i].classList.remove("active");
+            pannel[i].classList.remove('active');
+        }
+        $li[num].classList.add('active');
+        pannel[num].classList.add('active');
+    }
+
+    function autoplay(){
+        timer = setInterval(function(){
+            num++;
+            if(num>=len) num=0;
+            tab_change();
+        },1000);
+    }
+    autoplay();
 }
