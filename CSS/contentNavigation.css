@@ -1,0 +1,87 @@
+ul,li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.bannerSilderBigBox{
+    width: 100%;
+    text-align: center;
+}
+.contentNavBox{
+    /*margin-top: 200px;*/
+    width: 1232px;
+    position: absolute;
+    top:0px;
+    margin-left: 336px;
+    /*left: 336px;*/
+    z-index: 200;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    height: 500px;
+    overflow: hidden;
+}
+.contentNavLeft{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    float: left;
+    background-color: #666666;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.contentNavRight{
+    float: left;
+    width: 1032px;
+    background-color: rosybrown;
+    height: 500px;
+}
+.contentBoxSmallNav{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    /*position: absolute;*/
+}
+.contentBoxSmallNav:hover{
+    background-color: rosybrown;
+    color: black;
+}
+.rightContent{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 1032px;
+    height: 500px;
+    display: none;
+    background-color: rosybrown;
+}
+.shoes:hover .contentNavRightFirst{
+    display: block;
+}
+.bigBag:hover .contentNavRightSecond{
+    display: block;
+}
+.clothing:hover .contentNavRightThree{
+    display: block;
+}
+.sulwhasoo:hover .contentNavRightFour{
+    display: block;
+}
+.victoriaSecret:hover .contentNavRightFive{
+    display: block;
+}
+.skii:hover .contentNavRightSix{
+    display: block;
+}
+.baiQueAntelope:hover .contentNavRightSeven{
+    display: block;
+}
+.plantDoctor:hover .contentNavRightEight{
+    display: block;
+}
+.kiehls:hover .contentNavRightNine{
+    display: block;
+}
+.chanel:hover .contentNavRightTen{
+    display: block;
+}
