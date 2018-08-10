@@ -1,10 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+    <meta charset="utf-8">
+    <title>匀速运动的停止条件</title>
+    <style>
+        #div1 {width:100px; height:200px; background:red; position:absolute; left:600px; top:50px;}
+        #div2 {width:800px; height:1px; position:absolute; left:700px; top:0; background:black;}
+        #div3 {width:800px; height:1px; position:absolute; left:100px; top:0; background:black;}
+    </style>
+    <script>
+        window.onload=function(){
+            startMove(50);
+        }
+        var timer=null;
+        var inhhh = window.innerHeight - 250;
+        function startMove(iTarget)
+        {
+            var oDiv=document.getElementById('div1');
 
+            clearInterval(timer);
+            timer=setInterval(function (){
+                var speed=0;//速度？
+
+                if(oDiv.offsetTop<iTarget)
+                {
+                    speed=7;
+                }
+                else
+                {
+                    speed=-7;
+                }
+
+                if(Math.abs(iTarget-oDiv.offsetTop)<=7)
+                {
+                    clearInterval(timer);
+                    oDiv.style.top=iTarget+'px';
+                    startMove(iTarget==50?inhhh:50)
+                }
+                else
+                {
+                    oDiv.style.top=oDiv.offsetTop+speed+'px';
+                }
+            }, 60);
+        }
+    </script>
+</head>
+
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
 </body>
 </html>

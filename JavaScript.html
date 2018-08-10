@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gaoya</title>
+
+</head>
+<body>
+<!--<div id="myDIv" class="bd" title="body text" lang="en" dir="ltr">hhhhhhhh</div>-->
+<div class="firstDiv" id="firstDiv" style="width: 700px ;height: 100px;background-color: #00B262"></div>
+<button id="mubutton">gggggg</button>
+<script>
+
+    var divFirst = document.getElementById("firstDiv");
+    console.log(divFirst.style.cssText);
+
+    for(var i = 0; i<divFirst.style.length;i++){
+        var prop = divFirst.style[i];
+//        var value = divFirst.style.getPropertyCSSValue(prop);
+//        console.log(value);
+//                console.log(divFirst.style[i]);
+    }
+
+    divFirst.style.removeProperty("width")
+    console.log(divFirst.style.cssText);
+    console.log("***********************************");
+    var element = document.createElement("div");
+    element.className = "message";
+    var textNode = document.createTextNode("HELLO WORLD");
+    element.appendChild(textNode);
+
+    var textNodeAnthor = document.createTextNode("JavaScript");
+    element.appendChild(textNodeAnthor);
+    document.body.appendChild(element);
+
+    var commend = document.createComment("diyigecommend");
+    element.appendChild(commend);
+
+    console.log(element.childNodes.length);
+
+    element.normalize();
+    console.log(element.childNodes.length);
+    console.log(element.firstChild.nodeValue);
+    console.log(element.firstChild.nodeType);
+    console.log(element.lastChild.nodeValue);
+
+
+
+    var newNode = element.firstChild.splitText(5);
+    console.log(newNode);
+
+    var button = document.getElementById("mubutton");
+    button.focus();
+    console.log(document.hasFocus());
+
+
+    var div1 = document.createElement("div");
+    div1.setAttribute("class","box");
+
+    var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+    div2.appendChild(div3);
+    div2.setAttribute("class","box");
+
+    console.log(div1.isSameNode(div2));
+    console.log(div1.isEqualNode(div2));
+    
+</script>
+</body>
+</html>
