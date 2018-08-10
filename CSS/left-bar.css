@@ -1,5 +1,5 @@
 .leftBox{
-    padding-top: 35px;
+    padding-top: 250px;
     height: 100%;
     width: 50px;
     position: fixed;
@@ -55,13 +55,3 @@
     opacity: 1;
     right: 80px;
 }
-/*@keyframes mymove*/
-/*{*/
-/*from {opacity:0;right: 120px}*/
-/*to {opacity:1;right: 80px}*/
-/*}*/
-/*@-webkit-keyframes mymove /!* Safari and Chrome *!/*/
-/*{*/
-/*from {opacity:0;right: 120px;}*/
-/*to {opacity:1;right: 80px;}*/
-/*}*/
